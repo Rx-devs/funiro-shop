@@ -10,14 +10,17 @@
     <script src="https://kit.fontawesome.com/0368de2544.js" crossorigin="anonymous"></script>
     <!-- bootstrap styles -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- header starts -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#"> <span>Funiro.</span> </a>
+                <a class="navbar-brand" href="#"> <span class="fw-bold">Funiro.</span> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +51,12 @@
                         <li class="nav-item mx-2">
                             <a class="nav-link active" aria-current="page" href="#">Inspirations</a>
                         </li>
-                        <li class="nav-item mx-2" style="width: 400px;" >
+                        <li class="nav-item mx-2" style="width: 400px;">
                             <form class="position-relative">
-                                <input class="form-control w-100 me-2" type="search" placeholder="Search products" aria-label="Search">
-                                <a class="position-absolute text-dark" href="#" style="top: 8px; right: 20px;"><i class="fas fa-search"></i></a>
+                                <input class="form-control w-100 me-2" type="search" placeholder="Search products"
+                                    aria-label="Search">
+                                <a class="position-absolute text-dark" href="#" style="top: 8px; right: 20px;"><i
+                                        class="fas fa-search"></i></a>
                             </form>
                         </li>
                     </ul>
@@ -67,7 +72,176 @@
 
             </div>
         </nav>
+        <!-- top banner -->
+        <section class="container banner-area">
+            <div class="row g-0">
+                <div class="col-lg-5 col-12">
+                    <div class="banner-left-area">
+                        <h1>High-Quality Furniture Just For You</h1>
+                        <p>Our Furniture is made from selected and best quality materials that are suitable for your
+                            dream home.</p>
+                        <button class="btn btn-warning">Shop Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide banner-right-area"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img height="400" src="./images/banners/top-banner-1.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img height="400" src="./images/banners/top-banner-2.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img height="400" src="./images/banners/top-banner-3.png" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+
+    <main>
+        <!-- features-->
+        <section id="feature" class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div class="feature-icon"><img src="./images/icons/feature-icons/icon-1.svg" alt=""></div>
+                    <div>
+                        <h6>High Quality</h6>
+                        <p>crafted from top materials</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div class="feature-icon"><img src="./images/icons/feature-icons/icon-2.svg" alt=""></div>
+                    <div>
+                        <h6>Warranty Protection</h6>
+                        <p>Over 2 years</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div class="feature-icon"><img src="./images/icons/feature-icons/icon-3.svg" alt=""></div>
+                    <div>
+                        <h6>Free Shipping</h6>
+                        <p>Oder over 150$</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div class="feature-icon"><img src="./images/icons/feature-icons/icon-4.svg" alt=""></div>
+                    <div>
+                        <h6>24/7 Support</h6>
+                        <p>Dedicated customer support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="container">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row gy-2 gx-5">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-1.png" alt="Syltherine" class="product-img">
+                    <div class="product-info">
+                        <h5>Syltherine</h5>
+                        <small>Stylish cafe chair</small>
+                        <h6>Rp 2,500.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-2.png" alt="Leviosa" class="product-img">
+                    <div class="product-info">
+                        <h5>Leviosa</h5>
+                        <small>Stylish cafe chair</small>
+                        <h6>Rp 2,500.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-3.png" alt="Lolito" class="product-img">
+                    <div class="product-info">
+                        <h5>Lolito</h5>
+                        <small>Luxury big sofa</small>
+                        <h6>Rp 7,000.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-4.png" alt="Respira" class="product-img">
+                    <div class="product-info">
+                        <h5>Respira</h5>
+                        <small>Minimalist fan</small>
+                        <h6>Rp 500.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-5.png" alt="Grifo" class="product-img">
+                    <div class="product-info">
+                        <h5>Grifo</h5>
+                        <small>Night lamp</small>
+                        <h6>Rp 1,500.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-6.png" alt="Muggo" class="product-img">
+                    <div class="product-info">
+                        <h5>Muggo</h5>
+                        <small>Small mug</small>
+                        <h6>Rp 150.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-7.png" alt="Pingky" class="product-img">
+                    <div class="product-info">
+                        <h5>Pingky</h5>
+                        <small>Cute bed set </small>
+                        <h6>Rp 7,0000.000</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <img src="./images/products/product-8.png" alt="Potty" class="product-img">
+                    <div class="product-info">
+                        <h5>Potty</h5>
+                        <small>Minimalist flower pot </small>
+                        <h6>Rp 500.000</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">              
+            <button class="btn btn-warning">Show More</button>
+            </div>
+        </section>
+        
+        <!-- gallery -->
+        <section class="container">
+            <div class="gallery-title text-center">
+                <h6>Share your setup with</h6>
+                <h2>#FurniroFurniture</h2>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 gy-1 gx-2">
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-1.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-2.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-3.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-4.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-5.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-6.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-7.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-8.png" alt="" width="370" height="250"></div>
+                <div class="col gallery-img"><img src="./images/gallery/gallery-product-9.png" alt="" width="370" height="250"></div>
+            </div>
+        </section>
+    </main>
 
 
 

@@ -1,0 +1,48 @@
+/* common styles */
+img{
+    object-fit: cover;
+}
+
+/* header */
+#header{
+    background-color: #F9F1E7;
+}
+
+/* top banner */
+.banner-area{
+    margin-top: 30px;
+}
+.banner-left-area{
+    /* width: 35%; */
+    padding: 65px 60px 55px;
+    background-color: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(31px);
+}
+
+/* features*/
+#feature{
+    padding: 80px 0;
+}
+.feature-icon img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+/* products */
+.product-img{
+    width: 270px;
+    height: 270px;
+    border-radius: 5px;
+}
+.product-info{
+    padding: 16px 26px 30px 16px;
+}
+
+/* gallery */
+.gallery-title{
+    margin: 40px 0;
+}
+.gallery-img img{
+    border-radius: 5px;
+}
